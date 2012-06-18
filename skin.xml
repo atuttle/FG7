@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin id="FG7" name="FG7" version="1.0" provider-name="FusionGrokker" lastModified="2012-03-30">
+	<description>Design by Adam Tuttle</description>
+	<url></url>
+	<author>Adam Tuttle</author>
+	<authorUrl>http://fusiongrokker.com</authorUrl>
+	<designAuthor>Adam Tuttle</designAuthor>
+	<designAuthorUrl>http://fusiongrokker.com</designAuthorUrl>
+	<thumbnail>images/preview.png</thumbnail>
+	<preview></preview>
+	<requiresVersion match="greaterOrEqual">1.5</requiresVersion>
+	<adminEditorCss></adminEditorCss>
+	<license>Do Whatever The Fuck You Want To</license>
+	<pageTemplates>
+		<template file="archives_index.cfm" name="Archives Listing Page" />
+	</pageTemplates>
+	<adminPageTemplates>
+		<template id="login" file="login.cfm" />
+	</adminPageTemplates>
+	<podLocations>
+		<location id="sidebar" name="General Sidebar">
+			<!-- template pods defined in the skin -->
+			<pod id="archivesLink">Archives Link</pod>
+			<pod id="serviceLinks">Service Links</pod>
+		</location>
+	</podLocations>
+</skin>

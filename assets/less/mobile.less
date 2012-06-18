@@ -1,0 +1,137 @@
+//landscape tablets or giant-screen cellphones?
+@media screen and (max-width: 1040px) {
+
+	body {
+		padding: 15px 15px;
+	}
+
+	#container {
+		width: 785px;
+	}
+
+	#nav ul {
+		max-width: 100%;
+
+		li a {
+			font-size: 1em;
+		}
+	}
+
+	#face {
+		display: none;
+	}
+
+	#left {
+		width: 100%;
+		float: normal;
+	}
+	#right {
+		display: none;
+	}
+
+	#comments {
+		.wrapper {
+			width: 585px;
+		}
+
+		#respond {
+			input, textarea {
+				max-width: 100% !important;
+			}
+		}
+	}
+
+	pre.prettyprint {
+		font-family: 'Droid Sans Mono', courier, monospace;
+		font-size: 0.8em;
+	}
+
+}
+
+//landscape phones and portrait tablets
+@media screen and (max-width: 800px) {
+
+	body {
+		padding: 0;
+	}
+
+	#header {
+		height: 120px;
+		h1 {
+			font-size: 1.9em;
+		}
+		h2 {
+			font-size: .8em;
+		}
+		#nav ul li {
+			width: 25%;
+		}
+	}
+
+	#container {
+		width: 100% !important;
+	}
+
+	#left {
+		width: 100% !important;
+		float: normal;
+	}
+	#right {
+		display: none;
+	}
+
+	#content {
+		.post {
+			blockquote {
+				margin: 2px 6px;
+			}
+		}
+		p {
+			&.date {
+				span {
+					display: inline-block;
+					clear:left;
+				}
+			}
+		}
+		#archiveNav div {
+			&.next { float: none; margin: 0 auto; }
+			&.previous { float: none; margin: 25px auto 0 auto; }
+		}
+		padding-bottom: 30px;
+	}
+
+	#comments {
+		a.avatar {
+			display: none !important;
+		}
+		.wrapper {
+			width: 100% !important;
+			.timestamp {
+				font-size: 1em !important;
+			}
+			.body {
+				font-size: 1em !important;
+			}
+		}
+		.wrapper:before, .wrapper:after {
+			display: none;
+		}
+
+		#respond {
+			input, textarea {
+				max-width: 100% !important;
+			}
+		}
+	}
+
+	pre.prettyprint {
+		font-family: 'Droid Sans Mono', courier, monospace;
+		font-size: 0.8em;
+	}
+
+	//hide this stuff
+	#forkme, #nav li:nth-child(3), #nav li:nth-child(4)
+	{ display: none }
+
+}
